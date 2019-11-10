@@ -50,9 +50,13 @@ Input video frame dimensions:
 
 Following two steps are performed in preprocessing:
 
-    1. Resize: In the preprocessing step we have converted two different size of frames into one dimension of size 120x120. We have images are of 2 different shape and the conv3D will throw error if the inputs in a batch have different shapes. We will crop the image to (120, 120, 3), if the shape is (120, 160, 3)and we will resize to (120, 120, 3), if the shape is (360, 360, 3)
+    1. Resize: In the preprocessing step we have converted two different size of frames into one dimension of size 120x120. 
+    We have images are of 2 different shape and the conv3D will throw error if the inputs in a batch have different shapes. 
+    We will crop the image to (120, 120, 3), if the shape is (120, 160, 3)and we will resize to (120, 120, 3), if the shape 
+    is (360, 360, 3)
 
-    2. Normalization: Rescale pixel values from the range of 0-255 to the range 0-1 preferred for neural network models. Image data is normalized by dividing pixel values by 255.
+    2. Normalization: Rescale pixel values from the range of 0-255 to the range 0-1 preferred for neural network models. 
+    Image data is normalized by dividing pixel values by 255.
     
     
 Along with the data normalization and resizing, we need to implement generator function. which will feed data to the model for each epoch. We need to implement generator function which can feed equal size batches of sequences and take care of remaining sequences.

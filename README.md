@@ -25,6 +25,8 @@ The training data consists of a few hundred videos categorized into one of the f
 Each training and validation set consists of several sub folders. Each subfolder consists of frames of one video (30 frames for a gesture). Also, two csv files which consist of the video metadata (i.e. path of the video and its label).
 All images/frames of a video are of same dimension, there are two variants of the video image dimensions: 360x360 and 120x160
 
+The Full Data can be access @ https://drive.google.com/drive/folders/1bbtsPn_NxG6cl_md0gg7OHM840anGhPs?usp=sharing
+
 ## Solution Approach
 
 The following steps were followed in-order to classify the gestures correctly -
@@ -128,3 +130,7 @@ The plots give us insights to -
     • Whether the mode may be over-learning the training data (inflection for validation line).
     
 (Ref - https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)
+
+### Trained Model H5 Files
+
+The trained model files can be accessed @ https://drive.google.com/drive/folders/1bbtsPn_NxG6cl_md0gg7OHM840anGhPs?usp=sharing
